@@ -9,6 +9,9 @@ app.get('/', function(req, res){
     res.end(mydata);
 });
 
+var data=[
+
+]
 
 app.get('/books', function(req, res){
 
@@ -16,9 +19,7 @@ app.get('/books', function(req, res){
 });
 
 
-var data=[
 
-]
 app.post('/books', function(req, res){
     let JSONData=req.body;
     let title=JSONData['title']
